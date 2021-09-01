@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: saloni-web-deployment1
+  labels:
+    app: web1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web1
+  template:
+    metadata:
+      labels:
+        app: web1
+    spec:
+      containers:
+      - name: saloniweb1
+        image: gcr.io/google-samples/hello-app:1.0
+        ports:
+        - containerPort: 8080
