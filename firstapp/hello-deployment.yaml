@@ -5,7 +5,7 @@ metadata:
   labels:
     app: web1
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: web1
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: saloniweb1
-        image: gcr.io/google-samples/hello-app:1.0
+        image: gcr.io/google-samples/hello-app:2.0
         ports:
         - containerPort: 8080
