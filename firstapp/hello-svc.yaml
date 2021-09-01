@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: saloni-web2-lb2
+  name: saloni-web1-lb1
 spec:
   selector:
-    app: web2
+    app: web1
   ports:
     - port: 80
       protocol: TCP
